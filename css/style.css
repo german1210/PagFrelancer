@@ -1,0 +1,55 @@
+/* Fuente y conversion de px a rem */
+/* 1rem = 10px */
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+/* utilidad de colores */
+:root{
+    --bluesky:#4cb5f5;
+    --silver:#b7b8b6;
+    --fields:#b3c100;
+    --pine:#34675c;
+    --while:#ffffff;
+}
+/* utilidades */
+.contenedor{
+    max-width: 60%;
+    margin: 0 auto;
+}
+/* logo */
+.header h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.header h3 span{
+    font-size: 1.5rem;
+}
+/* navegacion */
+.navegacion-principal{
+    background-color: var(--pine);
+}
+.contenedor-nav nav{
+    display: flex;
+    justify-content: space-between;
+}
+.trans{
+    text-decoration: none;
+    color:var(--while) ;
+    padding: 1rem;
+    border-radius: 0rem;
+}
+.trans{ /* faltan transition de otros navegadores para compatibilidad */
+    -webkit-transition: background 1s, border-radius 1s;
+}
+.trans:hover{
+    background-color: var(--bluesky);
+}
+.trans:hover{
+    border-radius: 5rem;
+}
+/* hero */
